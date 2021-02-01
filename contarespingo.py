@@ -19,7 +19,7 @@ def fill_holes(img):
   img = cv2.erode(img, kernel, iterations=1)
 
   print("Entrada Fill Holes")
-  cv2_imshow(img)
+  cv2.imshow("Entrada Fill Holes", img)
   h = img.shape[0]
   w = img.shape[1]
 
@@ -37,7 +37,7 @@ def fill_holes(img):
   mask = cv2.erode(mask, kernel, iterations=2)
   print("Saida fill_holes")
 
-  cv2_imshow(mask)
+  cv2.imshow("Saida fill_holes",mask)
 
 	
   return mask
@@ -100,7 +100,7 @@ def find_roi(original_img, mask):
   roi = cv2.bitwise_and(roi,roi, mask=mask)
  
   print("ROI - funcao find_roi")
-  cv2_imshow(roi)
+  cv2.imshow("Roi de find_roi", roi)
 
   #retorna roi e nova mascara
   return roi, mask
@@ -133,7 +133,7 @@ def red_filter(img):
   red_img = cv2.bitwise_and(img, img, mask=all_red_mask)
 
   print("Imagem somente com pontos vermelhos")
-  cv2_imshow(red_img)
+  cv2.imshow("Imagem somente pontos vermelhos", red_img)
 
   return red_img
 
@@ -150,7 +150,7 @@ def count_red(img, mask):
   ret, th_red_img = cv2.threshold(red_img, 30, 255, 0)
 
   print("threshold imagem vermelha")
-  cv2_imshow(th_red_img)
+  cv2.imshow("threshold imagem vermelha", th_red_img)
   red_area = cv2.countNonZero(th_red_img)
 
   print("Red Area:", red_area)
