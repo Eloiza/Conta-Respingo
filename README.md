@@ -5,7 +5,8 @@ O objetivo deste projeto é medir a proteção oferecida por diferentes tipos de
 
 O código principal pode ser encontrado no arquivo `main.py` e a implementação das principais funções usadas pode ser encontrada no arquivo `contarespingo.py`. O mesmo código presente nos arquivos `.py` também está disponível em forma de python notebook e pode ser acessado pelo arquivo deste repositório `ContaRespingo.ipynb` ou acessando o google colaboratory [clicando aqui!](https://colab.research.google.com/drive/1U6iijQLX70jgwnVNHzfAJ9yhC-jjS7gq) ou pelo arquivo python notebook presente no repositório. 
 
-    
+A pasta `Imagens` contém imagens das seções de fotos feitas e podem ser usadas para testar o funcionamento do código deste repositório.
+
 ### Dependências
 Para executar o código é preciso ter instalado a biblioteca `opencv` e `numpy`. Você pode instalar a biblioteca `opencv` executando o código abaixo:
 
